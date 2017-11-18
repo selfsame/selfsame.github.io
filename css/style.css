@@ -1,0 +1,216 @@
+@font-face {
+	font-family: 'fira_coderegular';
+	src: url('./FiraCode-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	margin: 0;
+	background: url('../img/broken_noise.png');
+	color: #d7c4a2;
+}
+
+h1#domain {
+	font-size:2.2em;
+	text-align:center;
+	text-decoration: none;
+}
+
+h1#domain a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+
+header {
+	text-align: center;
+}
+
+header a{
+	text-decoration: none;
+	margin: 0em 0.5em;
+	color: orange;
+}
+
+header a:hover{
+	border-bottom: 2px solid white;
+}
+
+article, footer {
+	width: 60%;
+	max-width: 900px;
+	min-width: 700px;
+	margin: 4em auto;
+}
+
+article > * {
+	clear:both;
+}
+
+#index a {
+	font-size: 2em;
+	margin: 0em 0em 0.6em;
+	display:block;
+	clear:both;
+	color: yellow;
+}
+
+#index a:visited {
+	color: #6e6e12;
+}
+
+article h1{
+	text-align: center;
+}
+
+article h1, article h2, article h3, article h4 {
+	color: #d0d0d0;
+}
+
+article > p {
+	text-indent: 1.2em;
+	line-height: 1.4em;
+	margin-bottom: 1.5em;
+}
+
+blockquote{
+	color: #60cbbb;
+	font-family: times, serif;
+	clear: both;
+	font-size: 0.95em;
+	line-height: 1.5em;
+	/*text-indent: 1em;*/
+}
+
+blockquote::before{
+  content: "\201C";
+	font-size: 2.2em;
+	position: absolute;
+	margin: 0em 0em 0em -0.6em;
+}
+
+article img {
+	display: block;
+	margin: 0em auto;
+	max-width: 100%;
+}
+
+p code, ul code, blockquote code {
+	padding: 0.2em 0.5em;
+	font-size: 0.8em;
+	border-radius: 2em;
+}
+
+footer {
+	text-align: center;
+	color: #616161;
+	font-size: 12px;
+	clear: both;
+	margin: 1em auto 3em;
+	padding: 1.5em;
+	border-top: 1px solid black;
+}
+
+
+
+/* markdown code */
+
+code{
+	background: black;
+  font-family: 'fira_coderegular', monospace;
+}
+
+pre{
+	background: black;
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: contextual;
+  -webkit-font-feature-settings: "liga" on, "calt" on;
+  -webkit-font-smoothing: antialiased;
+	font-size: 13px;
+	line-height:17px;
+	font-weight:bold;
+  margin: 0em;
+  padding-right: 10em;
+  overflow-x: auto;
+  position: relative;
+  width: 100%;
+  float: right;
+  overflow-y: auto;
+  height: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+  overflow-x:hidden;
+  margin-bottom: 2em;
+}
+
+/* dark.json clj theme */
+
+  ._ {color:transparent;}
+  .lambda {color:#00D8FF;}
+  .var-quote {color:#0D1436;}
+  .backtick {
+	color: #FF0000;
+}
+  .tilde {
+	color: #00FF04;
+}
+  .deref {color:#FFEA00;}
+  .variadic {
+	color: #F000FF;
+	font-style: italic;
+}
+  .quote {
+	color: #bada55;
+	background: #03071A;
+}
+  .meta {
+	color: #FFA800;
+	background: #082644;
+	font-style: italic;
+}
+  .ignore {
+	color: #568299;
+	opacity: 0.3;
+}
+  .regex {color:#00EF93;}
+  .keyword {color:#984CFF;}
+  .qualified-kw {color:#C01AFE;}
+  .string {color:#10C900;}
+  .comment {
+	color: #5A687F;
+	background: black;
+}
+  .ns {
+	color: #009DFE;
+	font-weight: bold;
+}
+  .symbol {color:#A8AE6F;}
+  .char {
+	color: #3B93FF;
+	background: #291701;
+}
+  .ratio {color:#C92776;}
+  .float {color:#FF8400;}
+  .int {color:#FFDE00;}
+  .instance {color:#00FCFF;}
+  .illegal {
+	color: #FF0000;
+	text-decoration: underline;
+}
+exp {color:#FF5400;}
+exp exp {color:#3292FF;}
+exp exp exp {color:#B51A1A;}
+exp exp exp exp {color:#1ED7AE;}
+exp exp exp exp exp {color:#C821E1;}
+exp exp exp exp exp exp {color:#F0FF00;}
+exp exp exp exp exp exp exp {color:#8F49F9;}
+exp exp exp exp exp exp exp exp {color:#16D60C;}
+exp exp exp exp exp exp exp exp exp {color:#BA8745;}
+exp exp exp exp exp exp exp exp exp exp {color:#E177D6;}
+exp exp exp exp exp exp exp exp exp exp exp {color:#007C37;}
+exp exp exp exp exp exp exp exp exp exp exp exp {color:#4343F5;}
+exp exp exp exp exp exp exp exp exp exp exp exp exp {color:#2D9A81;}
+  .core .symbol {
+	color: #F2840B;
+}

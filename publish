@@ -1,0 +1,5 @@
+rm -rf ./posts/*
+node generate.js
+git add --all
+git commit -m "publish"
+git push origin master
