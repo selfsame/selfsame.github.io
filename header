@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>{post-title}</title>
-	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css?v=1">
     <script src="/js/gen.js?v=1"></script>
     <script src="/js/peg.js"></script>
 </head>
@@ -14,4 +14,5 @@
 	<a target="_blank" href="http://selfsame.itch.io">itch</a>
 	<a target="_blank" href="http://selfsamegames.com">games</a>
 	<a target="_blank" href="http://tilde.town/~selfsame">tilde</a>
+	<a target="_blank" href="https://www.patreon.com/selfsame">patreon</a>
 </header>

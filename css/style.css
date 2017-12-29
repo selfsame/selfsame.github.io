@@ -22,9 +22,24 @@ h1#domain a{
 	color: #ffffff;
 }
 
+/*h1#domain::before{
+	content: "";
+	width: 32px;
+	height: 32px;
+	background-image: url("../img/avatar.png");
+}*/
 
 header {
 	text-align: center;
+}
+
+a {
+	color: orange;
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: 2px solid white;
 }
 
 header a{
@@ -100,6 +115,10 @@ p code, ul code, blockquote code {
 	padding: 0.2em 0.5em;
 	font-size: 0.8em;
 	border-radius: 2em;
+}
+
+article h2{
+	margin-top: 2em;
 }
 
 footer {
