@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2017</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css?v=1">
+    <script src="/js/gen.js?v=1"></script>
+    <script src="/js/peg.js"></script>
+</head>
+<body>
+<header>
+	<h1 id='domain'><a href="/">selfsame.github.io</a></h1>
+	<a target="_blank" href="http://www.twitter.com/jplur_">twitter</a>
+	<a target="_blank" href="http://www.github.com/selfsame">github</a>
+	<a target="_blank" href="http://selfsame.itch.io">itch</a>
+	<a target="_blank" href="http://selfsamegames.com">games</a>
+	<a target="_blank" href="http://tilde.town/~selfsame">tilde</a>
+	<a target="_blank" href="https://www.patreon.com/selfsame">patreon</a>
+</header>  <article>
+<h1 id="2017-in-review">2017 in review</h1>
+<h2 id="new-libraries">New Libraries</h2>
+<h3 id="-github-com-selfsame-soa-https-github-com-selfsame-soa-"><a href="https://github.com/selfsame/soa">github.com/selfsame/soa</a></h3>
+<p>A clojurescript <a href="https://en.wikipedia.org/wiki/AOS_and_SOA">structure of arrays</a> datatype. These are immutable collections of data with low memory usage (much lower than vectors of records). Designed with mentorship by Brandon Bloom.</p>
+<h3 id="-github-com-selfsame-tenlet-https-github-com-selfsame-tenlet-"><a href="https://github.com/selfsame/tenlet">github.com/selfsame/tenlet</a></h3>
+<p>A clojure telnet library with handlers for some of the fancier telnet protocols like single key input and client terminal sizing.  If you&#39;re looking to make a MUD with clojure, this would be a great place to start.</p>
+<h3 id="-pico8-libs-https-www-lexaloffle-com-bbs-uid-24591-mode-carts-"><a href="https://www.lexaloffle.com/bbs/?uid=24591&amp;mode=carts">pico8 libs</a></h3>
+<p>Three tiny pico8 code libraries. I also ported <a href="https://github.com/selfsame/carts/blob/master/wfc.p8">Wave Function Collapse to Lua</a>, but didn&#39;t release it as the pico8&#39;s integer limitations make it unusable for non trivial patterns.</p>
+<h2 id="new-tools">New Tools</h2>
+<h3 id="-open-vr-sculpting-app-https-github-com-selfsame-sculptgl-"><a href="https://github.com/selfsame/sculptgl">open VR sculpting app</a></h3>
+<p>A fork of the webgl based <a href="https://github.com/stephomi/sculptgl">SculptGL</a> for VR.</p>
+<p>Works with both the HTC Vive and Occulus Rift, but it&#39;s a pretty &quot;bare boned&quot; adaptation with no 3D interface.  The neat feature here is mesh-surface sculpting in VR, which IMO allows for a better control of detail and form than the current signed distance field based VR tools.</p>
+<p><img src="https://cloud.githubusercontent.com/assets/2467644/26756270/51157374-486c-11e7-8e4b-ccb7f1e041f4.gif" alt="sculptgl-vr"></p>
+<h3 id="-github-com-arcadia-unity-arcadiagodot-https-github-com-arcadia-unity-arcadiagodot-"><a href="https://github.com/arcadia-unity/ArcadiaGodot">github.com/arcadia-unity/ArcadiaGodot</a></h3>
+<p>Now that the Godot game engine <a href="https://godotengine.org/article/introducing-csharp-godot">embeds mono</a>, it&#39;s possible to use clojureCLR.  This is a <em>very</em> minimal adaptation of Arcadia, which brings clojure to the Unity game engine.</p>
+<p><img src="https://user-images.githubusercontent.com/2467644/34442316-5ec38f84-ec8f-11e7-8152-5b5a37df1df3.gif" alt="godot2"></p>
+<h2 id="new-games">New Games</h2>
+<h3 id="-swapland-https-arcadia-clojure-itch-io-swapland-"><a href="https://arcadia-clojure.itch.io/swapland">Swapland</a></h3>
+<p>This year&#39;s Arcadia community&#39;s Procjam entry.  We had a novel idea (top down shooter where you become what you kill), solid planning for how parts were <a href="https://github.com/selfsame/procadia2017">defined and combined into entites</a>, and an interesting way to <a href="https://github.com/selfsame/procadia2017/blob/master/Assets/game/ai.clj#L75">define AI behaviour</a> from timeline state machines. </p>
+<p><img src="https://user-images.githubusercontent.com/2467644/34449497-ccb808a8-ecc6-11e7-98e3-06e43129fa5e.gif" alt="horror"></p>
+<h3 id="-writo-https-github-com-selfsame-tenlet-blob-game-src-tenlet-scratch-cljc-"><a href="https://github.com/selfsame/tenlet/blob/game/src/tenlet/scratch.cljc">writo</a></h3>
+<p>A tradition on <a href="https://tilde.town">tilde.town</a> is making interactive toys for the terminal.  Writo is a telnet based multiplayer graffiti wall.  Users can walk around and write things.</p>
+<p><img src="/img/writo.png" alt="writo"></p>
+<h2 id="prototypes">Prototypes</h2>
+<p>Following some work making an in game Unity Clojure repl, I tried out a VR &quot;marimba style&quot; keyboard version.  Typing feels ok, if a bit slow.  The error messages were pretty cool, as they would stretch out into the horizon.</p>
+<p><img src="https://s3.amazonaws.com/screenularity/cljvr04.gif" alt="clj-vr"></p>
+<p>This is a bit of a novel concept: 3 Dimensional VR snake. The snake follows the orientation of the handheld controllers. Spent quite a bit of time getting the clojure code down to 0 memory allocation during updates, which worked thanks to the <a href="https://github.com/nasser/magic">Magic</a> compiler.</p>
+<p><img src="https://user-images.githubusercontent.com/2467644/34449463-7f513bac-ecc6-11e7-9ab4-df8ab2a4a22a.gif" alt="faster-snek"></p>
+<h2 id="sculpting">Sculpting</h2>
+<p>I managed to do some digital sculpting here and there, mainly with Oculus Medium, Sculptris, and Blender.</p>
+<p><img src="https://user-images.githubusercontent.com/2467644/34456355-030e95de-ed62-11e7-962e-0f47a68c913d.png" alt="selfsame_2017-12-30_14-43-11"></p>
+<p><img src="https://cdna.artstation.com/p/assets/images/images/005/189/282/large/joseph-parker-006.jpg?1489159893" alt="bust"></p>
+<p><img src="https://user-images.githubusercontent.com/2467644/34456357-0613157a-ed62-11e7-940d-f1b2f3fb2c2d.png" alt="quark-selfie"></p>
+<p><img src="/img/spicy.png" alt="spicer"></p>
+<h2 id="miscellanea">Miscellanea</h2>
+<ul>
+<li>wrote a <a href="https://twitter.com/procjam/status/926860129944907776">Procjam tutorial</a> on Wave Function Collapse</li>
+<li>a <a href="https://twitter.com/jplur_/status/891358168688754688">javascript joke</a> went a bit viral</li>
+<li>updates to <a href="https://tilde.town/~selfsame">tilde.town/~selfsame</a> and <a href="http://selfsamgames.com">selfsamegames.com</a></li>
+<li>contributions to <a href="https://github.com/nasser/socket">github.com/nasser/socket</a> and <a href="https://github.com/arcadia-unity/Arcadia/">github.com/arcadia-unity/Arcadia/</a></li>
+<li>handful of <a href="http://tilde.town/~selfsame/mastodonbots.html">Mastodon bots</a></li>
+</ul>
+
+  </article>	
+	<footer>
+		&copy; 2017 Joseph Parker
+	</footer>
+	<script>syntax()</script>
+</body>
+</html>
